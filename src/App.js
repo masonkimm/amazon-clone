@@ -11,10 +11,10 @@ function App() {
       <div className="app">
         <Header />
         <Switch>
-          <Route path="/checkout">
+          <Route path="/amazon-clone/checkout">
             <Checkout />
           </Route>
-          <Route path="/">
+          <Route path="/amazon-clone">
             <Home />
           </Route>
         </Switch>

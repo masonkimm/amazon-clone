@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <div className="Header">
-      <Link to="/">
+      <Link to="/amazon-clone">
         <img
           className="Header__logo"
           src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
@@ -42,7 +42,7 @@ export default function Header() {
           <span>& Orders</span>
         </div>
         <div className="Header__nav__item__cart">
-          <Link to="/checkout" className="link">
+          <Link to="/amazon-clone/checkout" className="link">
             <ShoppingCartIcon
               id="shoppingCartIcon"
               style={{ fontSize: 'x-large' }}
