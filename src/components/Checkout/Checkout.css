@@ -1,0 +1,44 @@
+.Checkout {
+  display: flex;
+  padding: 1rem;
+  background-color: white;
+  height: max-content;
+}
+/* left side */
+.Checkout__left {
+  display: flex;
+  flex-direction: column;
+  flex: 2.5;
+}
+.Checkout__left > img {
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 2rem;
+}
+.Checkout__left__title {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid gray;
+}
+/* right side */
+.Checkout__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 0.7;
+  background-color: rgb(234, 237, 237);
+  margin-left: 1rem;
+  padding: 0 2rem;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  height: 160px;
+}
+
+.Checkout__right > button {
+  background-color: #f0c14b;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+  padding: 0.5rem;
+  width: 100%;
+  margin: 0 auto;
+}

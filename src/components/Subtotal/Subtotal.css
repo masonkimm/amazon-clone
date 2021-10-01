@@ -1,0 +1,10 @@
+.Subtotal__giftOption {
+  display: flex;
+  align-items: center;
+}
+.Subtotal > h4 {
+  margin-bottom: 1rem;
+}
+.Subtotal input {
+  margin-right: 0.5rem;
+}
