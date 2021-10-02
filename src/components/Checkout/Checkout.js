@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useStateValue } from '../../reactContext/StateProvider';
 import Subtotal from '../Subtotal/Subtotal';
-import Product from '../Product/Product';
-
+// import Product from '../Product/Product';
+import CheckoutProduct from '../CheckoutProduct/CheckoutProduct';
 import './Checkout.css';
-
 export default function Checkout() {
+  // eslint-disable-next-line
   const [{ cart }, dispatch] = useStateValue();
 
   return (
@@ -18,10 +18,9 @@ export default function Checkout() {
         <div className="Checkout__left__title">
           <h2>Your shopping Cart</h2>
         </div>
-        {cart ? (
-          <div className="Checkout__row">
-            {cart.map((item) => (
-              <Product
+        {cart
+          ? cart.map((item) => (
+              <CheckoutProduct
                 key={item.id}
                 id={item.id}
                 title={item.title}
@@ -29,9 +28,8 @@ export default function Checkout() {
                 rating={item.rating}
                 image={item.image}
               />
-            ))}
-          </div>
-        ) : null}
+            ))
+          : null}
       </div>
       <div className="Checkout__right">
         <Subtotal />

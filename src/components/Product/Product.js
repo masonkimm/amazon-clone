@@ -24,6 +24,7 @@ export default function Item({ id, title, price, rating, image }) {
         <p>{title}</p>
 
         <p className="Product__price">
+          <span>$</span>
           <strong>{price}</strong>
         </p>
 
