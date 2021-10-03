@@ -3,12 +3,14 @@
   margin-top: 20px;
   margin-bottom: 20px;
   justify-content: space-evenly;
+  background-color: white;
+  padding: 1rem;
 }
-.CheckoutProduct__img {
-  width: 100%;
+.CheckoutProduct__img > img {
   object-fit: contain;
   height: 180px;
   width: 180px;
+  flex: 1;
 }
 .CheckoutProduct__info {
   padding: 0 20px;
@@ -34,4 +36,21 @@
 
 .CheckoutProduct__info > button:hover {
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .CheckoutProduct {
+    display: block;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+  .CheckoutProduct__img {
+    margin-bottom: 20px;
+  }
+  .CheckoutProduct__rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

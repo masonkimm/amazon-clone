@@ -59,3 +59,22 @@
 .Header__nav__item__cart .link > span {
   margin-left: 0.5rem;
 }
+
+@media (max-width: 768px) {
+  .Header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .Header__search {
+    display: none;
+  }
+  .Header__nav {
+    display: flex;
+    justify-content: space-around;
+
+    width: 100%;
+    margin-top: 15px;
+  }
+}

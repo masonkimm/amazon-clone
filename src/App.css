@@ -2,8 +2,7 @@
   margin: 0;
   padding: 0;
 }
-.app {
-}
+
 .link {
   color: white;
   text-decoration: none;
@@ -21,7 +20,16 @@
   height: 7vmin;
   pointer-events: none;
 }
-
+@media (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  *::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+}
 @media (prefers-reduced-motion: no-preference) {
   .app-logo {
     animation: app-logo-spin infinite 20s linear;

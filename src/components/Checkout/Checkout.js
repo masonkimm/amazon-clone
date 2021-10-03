@@ -33,9 +33,6 @@ export default function Checkout() {
       </div>
       <div className="Checkout__right">
         <Subtotal />
-        {/* <h3>SubTotal (2 items): $250.99</h3>
-        <p>This order contains a gift</p>
-        */}
         <button>Proceed to Checkout</button>
       </div>
     </div>

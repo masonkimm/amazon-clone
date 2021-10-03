@@ -21,24 +21,23 @@ export default function Item({ id, title, price, rating, image }) {
   return (
     <div className="Product">
       <div className="Product__info">
-        <p>{title}</p>
+        <p className="Product__title">{title}</p>
 
         <p className="Product__price">
           <span>$</span>
           <strong>{price}</strong>
         </p>
 
-        <div className="Product__info__rating">
+        <div className="Product__rating">
           {Array(rating)
             .fill()
             .map((_, i) => (
               <p key={i}>⭐</p>
             ))}
         </div>
+        <img className="Product__image" src={image} alt="" />
+        <button onClick={addToCart}>Add to Cart</button>
       </div>
-
-      <img className="Product__image" src={image} alt="" />
-      <button onClick={addToCart}>Add to Cart</button>
     </div>
   );
 }
