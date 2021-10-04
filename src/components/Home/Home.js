@@ -9,7 +9,7 @@ export default function Home() {
         <img
           className="Home__image"
           src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
-          alt="homepage banner"
+          alt="amazon prime advertisement banner"
         />
         <div className="Home__row">
           <Product

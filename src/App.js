@@ -18,7 +18,7 @@ function App() {
             <Home />
           </Route>
         </Switch>
-        <img src={logo} className="app-logo" alt="logo" />
+        <img src={logo} className="app-logo" alt="React logo" />
       </div>
     </Router>
   );

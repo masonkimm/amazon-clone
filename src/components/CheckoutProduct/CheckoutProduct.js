@@ -15,7 +15,7 @@ export default function CheckoutProduct({ id, image, title, price, rating }) {
   return (
     <div className="CheckoutProduct">
       <div className="CheckoutProduct__img">
-        <img className="" src={image} alt="" />
+        <img className="" src={image} alt={title} />
       </div>
       <div className="CheckoutProduct__info">
         <p className="CheckoutProduct__title">{title}</p>
@@ -30,7 +30,9 @@ export default function CheckoutProduct({ id, image, title, price, rating }) {
               <p key={i}>⭐</p>
             ))}
         </div>
-        <button onClick={removeFromCart}>Remove from Basket</button>
+        <button onClick={removeFromCart} aria-label="Remove">
+          Remove from cart
+        </button>
       </div>
     </div>
   );

@@ -13,7 +13,7 @@ export default function Checkout() {
       <div className="Checkout__left">
         <img
           src="https://images-na.ssl-images-amazon.com/images/G/02/UK_CCMP/TM/OCC_Amazon1._CB423492668_.jpg"
-          alt=""
+          alt="amazon advertisement"
         />
         <div className="Checkout__left__title">
           <h2>Your shopping Cart</h2>
@@ -33,7 +33,7 @@ export default function Checkout() {
       </div>
       <div className="Checkout__right">
         <Subtotal />
-        <button>Proceed to Checkout</button>
+        <button aria-label="Checkout">Proceed to Checkout</button>
       </div>
     </div>
   );

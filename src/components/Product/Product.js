@@ -35,8 +35,10 @@ export default function Item({ id, title, price, rating, image }) {
               <p key={i}>⭐</p>
             ))}
         </div>
-        <img className="Product__image" src={image} alt="" />
-        <button onClick={addToCart}>Add to Cart</button>
+        <img className="Product__image" src={image} alt={title} />
+        <button onClick={addToCart} aria-label="add to cart">
+          Add to Cart
+        </button>
       </div>
     </div>
   );
