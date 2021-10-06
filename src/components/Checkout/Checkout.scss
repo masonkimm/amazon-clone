@@ -1,3 +1,5 @@
+@import '../../sass/config';
+
 .Checkout {
   display: flex;
   padding: 1rem;
@@ -9,16 +11,17 @@
   display: flex;
   flex-direction: column;
   flex: 2.5;
+  img {
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 2rem;
+  }
+  .Checkout__left__title {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid gray;
+  }
 }
-.Checkout__left > img {
-  width: 100%;
-  object-fit: contain;
-  margin-bottom: 2rem;
-}
-.Checkout__left__title {
-  padding-bottom: 1rem;
-  border-bottom: 1px solid gray;
-}
+
 /* right side */
 .Checkout__right {
   display: flex;
@@ -26,22 +29,21 @@
   justify-content: space-evenly;
   flex: 1;
   background-color: rgb(234, 237, 237);
-  margin-left: 1rem;
   padding: 0 2rem;
+  margin: 1rem;
   border: 1px solid #dddddd;
   border-radius: 3px;
   height: 160px;
   background-color: white;
-}
-
-.Checkout__right > button {
-  background-color: #f0c14b;
-  border: 1px solid;
-  border-color: #a88734 #9c7e31 #846a29;
-  color: #111;
-  padding: 0.5rem;
-  width: 100%;
-  margin: 0 auto;
+  button {
+    background-color: $buttonColor;
+    border: 1px solid;
+    border-color: $buttonBorderColor;
+    color: #111;
+    padding: 0.5rem;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -49,15 +51,25 @@
     display: flex;
     flex-direction: column;
   }
-  .Checkout__left > img {
-    display: none;
-  }
+
   .Checkout__left {
     margin-top: 200px;
   }
+  .Checkout__left > img {
+    display: none;
+    margin: 0;
+  }
   .Checkout__right {
     position: absolute;
-    width: 73%;
-    margin: 0 auto;
+
+    text-align: center;
+    align-items: center;
+    display: flex;
+    margin-left: 8rem;
+  }
+}
+@media (max-width: 375px) {
+  .Checkout__right {
+    margin-left: 2rem;
   }
 }

@@ -1,9 +1,10 @@
 import React from 'react';
 import { useStateValue } from '../../reactContext/StateProvider';
 import Subtotal from '../Subtotal/Subtotal';
-// import Product from '../Product/Product';
 import CheckoutProduct from '../CheckoutProduct/CheckoutProduct';
-import './Checkout.css';
+// import './Checkout.css';
+import './Checkout.scss';
+
 export default function Checkout() {
   // eslint-disable-next-line
   const [{ cart }, dispatch] = useStateValue();

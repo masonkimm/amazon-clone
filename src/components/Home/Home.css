@@ -3,7 +3,6 @@
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  /* max-width: 1500px; */
 }
 .Home__image {
   width: 100%;
@@ -15,23 +14,18 @@
 .Home__row {
   padding: 2rem;
   display: flex;
-  /* flex: 3; */
   z-index: 1;
   margin-left: 1rem;
   margin-right: 1rem;
-  /* border: 1px solid black; */
 }
 
 @media (max-width: 768px) {
   .Home__image {
     display: none;
-    /* margin-top: -100px; */
   }
   .Home__row {
     padding: 0;
     display: block;
     margin-right: 30px;
-    /* margin: 0 auto; */
-    /* margin: 0 !important; */
   }
 }

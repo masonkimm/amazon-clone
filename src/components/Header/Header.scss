@@ -1,8 +1,9 @@
+@import '../../sass/config';
+
 .Header {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
-  background-color: #131921;
+  background-color: $headerBGColor;
   padding: 1rem;
   color: white;
   position: sticky;
@@ -21,43 +22,47 @@
   align-items: center;
   flex: 3;
   border-radius: 24px;
+
+  .Header__searchInput {
+    border: none;
+    width: 90%;
+    padding: 0.9rem;
+  }
+  .Header__searchIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $buttonColor;
+    padding: 0.37rem;
+  }
 }
-.Header__searchInput {
-  border: none;
-  width: 90%;
-  padding: 0.9rem;
-}
-.Header__searchIcon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f3a847;
-  padding: 0.37rem;
-}
+
 /* rightSide */
 .Header__nav {
   display: flex;
   justify-content: space-evenly;
   flex: 1;
-}
-.Header__navItem {
-  display: flex;
-  flex-direction: column;
-}
-.Header__navItem > span:first-child {
-  font-size: 0.8rem;
-}
-.Header__navItem > span:last-child {
-  font-size: 1rem;
-  font-weight: 800;
-}
-.Header__navCart .link {
-  margin-top: 0.3rem;
-  display: flex;
-  align-items: center;
-}
-.Header__navCart .link > span {
-  margin-left: 0.5rem;
+  .Header__navItem {
+    display: flex;
+    flex-direction: column;
+  }
+  .Header__navItem > span:first-child {
+    font-size: 0.8rem;
+  }
+  .Header__navItem > span:last-child {
+    font-size: 1rem;
+    font-weight: 800;
+  }
+  .Header__navCart {
+    .link {
+      margin-top: 0.3rem;
+      display: flex;
+      align-items: center;
+      span {
+        margin-left: 0.5rem;
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {

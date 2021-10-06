@@ -1,0 +1,64 @@
+@import '../../sass/config';
+
+.CheckoutProduct {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: space-evenly;
+  background-color: white;
+  padding: 1rem;
+}
+.CheckoutProduct__img {
+  width: 180px;
+  margin-right: 30px;
+  img {
+    object-fit: contain;
+    height: 180px;
+    width: 180px;
+    flex: 1.5;
+  }
+}
+.CheckoutProduct__info {
+  padding: 0 20px;
+  padding-left: 10px;
+  flex: 3;
+  .CheckoutProduct__title {
+    font-size: 17px;
+    font-weight: 800;
+  }
+  .CheckoutProduct__price {
+    margin-top: 10px;
+  }
+  .CheckoutProduct__rating {
+    display: flex;
+  }
+  button {
+    background-color: $buttonColor;
+    border: 1px solid;
+    border-color: $buttonBorderColor;
+    color: #111;
+    padding: 0.5rem;
+    margin-top: 20px;
+  }
+  button:hover {
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+  .CheckoutProduct {
+    display: block;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+  .CheckoutProduct__img {
+    margin-bottom: 20px;
+    margin: 0 auto;
+  }
+  .CheckoutProduct__rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

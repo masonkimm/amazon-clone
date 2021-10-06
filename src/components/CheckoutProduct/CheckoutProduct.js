@@ -1,6 +1,7 @@
 import React from 'react';
 import { useStateValue } from '../../reactContext/StateProvider';
-import './CheckoutProduct.css';
+// import './CheckoutProduct.css';
+import './CheckoutProduct.scss';
 
 export default function CheckoutProduct({ id, image, title, price, rating }) {
   // eslint-disable-next-line

@@ -1,5 +1,6 @@
 import React from 'react';
-import './Header.css';
+// import './Header.css';
+import './Header.scss';
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Link } from 'react-router-dom';
@@ -21,27 +22,27 @@ export default function Header() {
 
       <div className="Header__search">
         <input
-          className="Header__search__input"
+          className="Header__searchInput"
           type="text"
           placeholder="search Amazon"
         />
 
         <SearchIcon
-          className="Header__search__icon"
+          className="Header__searchIcon"
           style={{ fontSize: 'xx-large', color: 'black' }}
         />
       </div>
 
       <div className="Header__nav">
-        <div className="Header__nav__item">
+        <div className="Header__navItem">
           <span>Hello, sign in</span>
           <span>Account & Lists</span>
         </div>
-        <div className="Header__nav__item">
+        <div className="Header__navItem">
           <span>Returns</span>
           <span>& Orders</span>
         </div>
-        <div className="Header__nav__item__cart">
+        <div className="Header__navCart">
           <Link to="/amazon-clone/checkout" className="link" aria-label="Cart">
             <ShoppingCartIcon
               id="shoppingCartIcon"
