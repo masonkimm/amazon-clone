@@ -44,6 +44,10 @@
     width: 100%;
     margin: 0 auto;
   }
+  button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
 }
 
 @media (max-width: 768px) {
