@@ -4,7 +4,7 @@ import { useStateValue } from '../../reactContext/StateProvider';
 import './Product.scss';
 export default function Item({ id, title, price, rating, image }) {
   const [{ cart }, dispatch] = useStateValue();
-  console.log('cart:', cart);
+  
   const addToCart = () => {
     // send info to data layer
     dispatch({

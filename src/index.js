@@ -4,6 +4,9 @@ import App from './App';
 import './index.css';
 import reducer, { initialState } from './reactContext/Reducer';
 import { StateProvider } from './reactContext/StateProvider';
+import process from "process";
+
+window.process = process;
 
 ReactDOM.render(
   <React.StrictMode>
